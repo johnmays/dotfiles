@@ -1,0 +1,10 @@
+# General:
+.DS_store
+
+# Adobe Illustrator source:
+*.ai
+
+# Python:
+**/__pycache__/
+*.py[cod]
+*$py.class
