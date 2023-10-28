@@ -1,3 +1,6 @@
+# Base directory of the repo:
+**/.cconfig.git/
+
 # General:
 .DS_store
 
