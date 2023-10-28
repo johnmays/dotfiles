@@ -17,6 +17,7 @@ lightblue = "#017dbb"
 red = "#bb4542"
 orange = "#bb6742"
 yellow = "#bc955c"
+fakecolor = "#bbbbbb"
 
 screens = [
     Screen(
