@@ -1,9 +1,8 @@
 from libqtile import bar
-from .widgets import *
+from modules.widgets import *
 from libqtile.config import Screen
 from modules.keys import terminal
 import os
-# import custom_colors
 
 darkestgray = "#171b1c"
 darkergray = "#24282a"
@@ -17,13 +16,14 @@ lightblue = "#017dbb"
 red = "#bb4542"
 orange = "#bb6742"
 yellow = "#bc955c"
-fakecolor = "#bbbbbb"
+
+pad_length = 6
 
 screens = [
     Screen(
         wallpaper="~/.config/qtile/background.png",
         top=bar.Bar(
-            [   widget.Sep(padding=3, linewidth=0, background=darkergray),
+            [   widget.Sep(padding=pad_length, linewidth=0, background=darkergray),
                 widget.GroupBox(
                                 highlight_method='block',
                                 this_screen_border="#00ff00",
@@ -33,7 +33,6 @@ screens = [
                                 background=darkergray,
                                 disable_drag=False
                 ),
-                #widget.Prompt(),
                 widget.Spacer(length=5),
                 widget.WindowName(foreground=lightblue,fmt='{}'),
                 widget.CheckUpdates(
@@ -51,10 +50,14 @@ screens = [
                     foreground=offwhite,
                     background=darkgray
                 ),
+                widget.Sep(padding=pad_length, linewidth=0, background=darkgray),
+                widget.Sep(padding=pad_length, linewidth=0, background=darkergray),
                 widget.Clock(format='%m/%d/%Y %a %I:%M %p',
                              background=darkergray,
                              foreground=offwhite
                 ),
+                widget.Sep(padding=pad_length, linewidth=0, background=darkergray),
+                widget.Sep(padding=pad_length, linewidth=0, background=darkgray),
                 widget.TextBox( # Power button
                     text='',
                     mouse_callbacks= {
@@ -62,8 +65,8 @@ screens = [
                         lambda: qtile.cmd_spawn(os.path.expanduser('~/.config/rofi/powermenu.sh'))
                     },
                     foreground=red
-                )
-                
+                ),
+                widget.Sep(padding=pad_length, linewidth=0, background=darkgray)
             ],
             40,  # height in px
             background=darkgray  # background color
