@@ -4,7 +4,7 @@ from libqtile.config import Screen
 from modules.keys import terminal
 import os
 from modules.colors import *
-from modules.custom_widgets import custom_groupbox
+from modules.custom_widgets import custom_groupbox, custom_volume
 
 pad_length = 6
 
@@ -38,8 +38,9 @@ screens = [
                         'Button1':
                         lambda: qtile.cmd_spawn(terminal + ' -e yay -Syu')
                     },
-                    background="#2f343f"),
-                widget.Volume(
+                    background="#2f343f"
+                ),
+                custom_volume.Volume(
                     foreground=offwhite,
                     background=darkgray
                 ),
@@ -50,6 +51,21 @@ screens = [
                     foreground=offwhite
                 ),
                 widget.Sep(padding=pad_length, linewidth=0, background=darkergray),
+                widget.Sep(padding=pad_length, linewidth=0, background=darkgray),
+                widget.Battery(
+                    charge_char = "^",
+                    discharge_char = "",
+                    full_char = "",
+                    empty_char = "",
+                    not_charging_char = "",
+                    unknown_char = "",
+                    format = "BAT: {percent:2.0%}{char}",
+                    show_short_text = False,
+                    foreground = offwhite
+                ),
+                widget.Sep(padding=pad_length, linewidth=0, background=darkgray),
+                # widget.Bluetooth(),
+                # widget.Wlan(),
                 widget.Sep(padding=pad_length, linewidth=0, background=darkgray),
                 widget.TextBox( # Power button
                     text='',
