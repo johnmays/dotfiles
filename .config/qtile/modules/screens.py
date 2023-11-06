@@ -4,6 +4,7 @@ from libqtile.config import Screen
 from modules.keys import terminal
 import os
 from modules.colors import *
+from modules.custom_widgets import custom_groupbox
 
 pad_length = 6
 
@@ -11,17 +12,20 @@ screens = [
     Screen(
         wallpaper="~/.config/qtile/background.png",
         top=bar.Bar(
-            [   widget.GroupBox(
+            [
+                custom_groupbox.GroupBox(
                     highlight_method = 'block',
                     this_screen_border = "#00ff00",
                     this_current_screen_border=blue,
-                    active=offwhite,
-                    inactive=gray,
+                    active = offwhite,
+                    inactive = gray,
+                    inactive_highlight = darkergray,
                     background=darkergray,
                     disable_drag=True,
                     visible_groups = ['1', '2', '3', '4', '5'],
                     margin = 3,
-                    spacing = pad_length
+                    spacing = pad_length,
+                    rounded = False,
                 ),
                 widget.Spacer(length=5),
                 widget.WindowName(foreground=lightblue,fmt='{}'),
