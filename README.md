@@ -9,13 +9,15 @@ My Linux build's configuration files.  My goals for this system are:
 ## What I am using:
 - OS: [EndeavourOS](https://endeavouros.com/) (built on top of Arch).
 - Window Manager: [Qtile](https://qtile.org/) This takes care of my bar as well, so it is my entire desktop environment.
-- Package Managers (2): [pacman](https://archlinux.org/pacman/) and [yay](https://github.com/Jguer/yay) for interfacing with [AUR](https://aur.archlinux.org/).
-- Terminal Emulator: [xfce4-terminal]
+- Package Managers (2):
+  - [pacman](https://archlinux.org/pacman/)
+  - [yay](https://github.com/Jguer/yay) for interfacing with [AUR](https://aur.archlinux.org/).
+- Terminal Emulator: [xfce4-terminal](https://docs.xfce.org/apps/terminal/start)
 - Shell: [bash](https://en.wikipedia.org/wiki/Bash_(Unix_shell))
 - Editor: [VScode](https://code.visualstudio.com/)
 - Web Browser: [Firefox](https://www.mozilla.org/en-US/firefox/new/)
 - File Browser: [Thunar](https://wiki.archlinux.org/title/thunar)
-- Audio: [Spotify (spotify-launcher)](https://archlinux.org/packages/extra/x86_64/spotify-launcher/) Not really maintained, but that might be a good thing -- you aren't subject to the relentless A/B testing they're always doing.
+- Audio: [Spotify (spotify-launcher)](https://archlinux.org/packages/extra/x86_64/spotify-launcher/) Not really maintained, but that might be a good thing, because you aren't subject to the relentless A/B testing they're always doing.
 
 ## Installing:
 ```shell
