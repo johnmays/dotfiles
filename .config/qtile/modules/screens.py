@@ -11,15 +11,17 @@ screens = [
     Screen(
         wallpaper="~/.config/qtile/background.png",
         top=bar.Bar(
-            [   widget.Sep(padding=pad_length, linewidth=0, background=darkergray),
-                widget.GroupBox(
-                                highlight_method='block',
-                                this_screen_border="#00ff00",
-                                this_current_screen_border=blue,
-                                active=offwhite,
-                                inactive=gray,
-                                background=darkergray,
-                                disable_drag=False
+            [   widget.GroupBox(
+                    highlight_method = 'block',
+                    this_screen_border = "#00ff00",
+                    this_current_screen_border=blue,
+                    active=offwhite,
+                    inactive=gray,
+                    background=darkergray,
+                    disable_drag=True,
+                    visible_groups = ['1', '2', '3', '4', '5'],
+                    margin = 3,
+                    spacing = pad_length
                 ),
                 widget.Spacer(length=5),
                 widget.WindowName(foreground=lightblue,fmt='{}'),
@@ -40,8 +42,8 @@ screens = [
                 widget.Sep(padding=pad_length, linewidth=0, background=darkgray),
                 widget.Sep(padding=pad_length, linewidth=0, background=darkergray),
                 widget.Clock(format='%m/%d/%Y %a %I:%M %p',
-                             background=darkergray,
-                             foreground=offwhite
+                    background=darkergray,
+                    foreground=offwhite
                 ),
                 widget.Sep(padding=pad_length, linewidth=0, background=darkergray),
                 widget.Sep(padding=pad_length, linewidth=0, background=darkgray),
@@ -55,7 +57,7 @@ screens = [
                 ),
                 widget.Sep(padding=pad_length, linewidth=0, background=darkgray)
             ],
-            40,  # height in px
+            48,  # height in px
             background=darkgray  # background color
         ) ),
 ]
