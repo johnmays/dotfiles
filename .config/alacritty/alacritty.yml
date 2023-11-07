@@ -2,6 +2,10 @@ live_config_reload: false
 
 window:
   title: Term
+  padding:
+   x: 4
+   y: 4
+
 
 cursor:
   style:
