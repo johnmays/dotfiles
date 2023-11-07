@@ -11,16 +11,19 @@ qtile:
     ✔ edit bar @done(23-11-05 23:27)
     ✔ figure out how to retile @done(23-11-06 19:53)
     ✔ figure out how to scale tiles @done(23-11-06 19:53)
-    ☐ change keybindings to be more coherent
-    ☐ change appearance of run & power menus
+    ✔ change keybindings to be more coherent @done(23-11-06 23:30)
+    ☐ change appearance of run & power menus (rofi)
 
 qtile bar:
     ☐ add both bats
     ☐ wifi widget
+    ☐ power icon png/svg?
+    ☐ redmode battery
 
 Applications:
-    ☐ yt-dlp
-    ☐ media player
+    ✔ yt-dlp @done(23-11-06 23:50)
+    ✔ media player (nsxiv) @done(23-11-06 23:54)
+    ✔ mpv (images) @done(23-11-06 23:54)
     
 VSCode:
     ☐ configure extensions
@@ -35,6 +38,9 @@ Bash:
     ✔ figure out what the emulator actually is: XFCE4 @done(23-11-05 23:27)
     ✔ list of commands @done(23-11-05 23:28)
     ☐ address copy/paste issue
+
+Scripts:
+    ☐ comment code for color parser
 
 Alacritty:
     ✔ change prompt @done(23-11-06 20:35)
@@ -61,5 +67,8 @@ Misc:
 
 Repo:
     ☐ add computer to readme
+    ☐ add bare repo to readme
     ☐ add screenshot to readme
+    ☐ add flameshot to readme
+    ☐ add bluetooth to readme
     ☐ shell script to update yay and pacman packages

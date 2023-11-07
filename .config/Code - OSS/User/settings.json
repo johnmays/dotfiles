@@ -1,0 +1,11 @@
+{
+    "workbench.startupEditor": "none",
+    "window.zoomLevel": 2,
+    "explorer.confirmDragAndDrop": false,
+    "git.openRepositoryInParentFolders": "always",
+    "explorer.confirmDelete": false,
+    "editor.fontFamily": "'Input Mono', Input Mono",
+    "editor.minimap.enabled": false,
+    "editor.fontSize": 16,
+    "workbench.colorTheme": "Visual Studio Dark"
+}
