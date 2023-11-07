@@ -1,33 +1,65 @@
 OS:
-✔ set up git and GH @done(23-11-05 23:27)
-✔ install spotify @done(23-11-05 23:27)
+    ✔ set up git and GH @done(23-11-05 23:27)
+    ✔ install spotify @done(23-11-05 23:27)
+
 qtile:
-✔ set background @done(23-11-05 23:27)
-☐ change UI scale
-✔ make color palette myself @done(23-11-05 23:27)
-☐ configure qtile w/ python
-✔ edit config to accomodate colors @done(23-11-05 23:27)
-✔ remove logo @done(23-11-05 23:27)
-✔ edit bar @done(23-11-05 23:27)
-☐ figure out how to retile
-☐ figure out how to scale tiles
+    ✔ set background @done(23-11-05 23:27)
+    ✘ change UI scale @cancelled(23-11-06 19:52)
+    ✔ make color palette myself @done(23-11-05 23:27)
+    ✔ edit config to accomodate colors @done(23-11-05 23:27)
+    ✔ remove logo @done(23-11-05 23:27)
+    ✔ edit bar @done(23-11-05 23:27)
+    ✔ figure out how to retile @done(23-11-06 19:53)
+    ✔ figure out how to scale tiles @done(23-11-06 19:53)
+    ☐ change keybindings to be more coherent
+    ☐ change appearance of run & power menus
+
+qtile bar:
+    ☐ add both bats
+    ☐ wifi widget
+
 Applications:
+    ☐ yt-dlp
+    ☐ media player
+    
 VSCode:
-☐ configure extensions
-☐ document of shortcuts
-☐ change shortcuts
-☐ add snippets
-Terminal:
-✔ figure out what the emulator actually is: XFCE4 @done(23-11-05 23:27)
-✔ list of commands @done(23-11-05 23:28)
-☐ address copy/paste issue
+    ☐ configure extensions
+    ☐ document of shortcuts
+    ☐ change shortcuts
+    ☐ add snippets
+    ☐ add list of extensions to repo
+    ☐ add configuration to repo
+    ☐ add keybindings to repo
+
+Bash:
+    ✔ figure out what the emulator actually is: XFCE4 @done(23-11-05 23:27)
+    ✔ list of commands @done(23-11-05 23:28)
+    ☐ address copy/paste issue
+
+Alacritty:
+    ✔ change prompt @done(23-11-06 20:35)
+
 Thunar:
-☐ change appearance
+    ☐ change colors
+    ☐ change font
+
 Firefox:
-☐ configure somehow??
+    ☐ change colors
+    ☐ change text size
+    ☐ change font
+    ☐ remove icon?
+
 Misc:
-☐ get better at touch typing
-☐ find touch typing program
-☐ find notes program
-☐ find and document qtile keybinds
-☐ directory aliases in thunar or filesystem?
+    ☐ get better at touch typing
+    ☐ find touch typing program
+    ☐ find notes program
+    ☐ find and document qtile keybinds
+    ☐ directory aliases in thunar or filesystem?
+    ☐ bluetooth in startup script?
+    ☐ download ambient music
+    ☐ add bright & dark green to color scheme
+
+Repo:
+    ☐ add computer to readme
+    ☐ add screenshot to readme
+    ☐ shell script to update yay and pacman packages

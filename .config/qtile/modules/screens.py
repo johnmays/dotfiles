@@ -15,7 +15,7 @@ screens = [
             [
                 custom_groupbox.GroupBox(
                     highlight_method = 'block',
-                    this_screen_border = "#00ff00",
+                    this_screen_border = offwhite,
                     this_current_screen_border=blue,
                     active = offwhite,
                     inactive = gray,
@@ -38,7 +38,7 @@ screens = [
                         'Button1':
                         lambda: qtile.cmd_spawn(terminal + ' -e yay -Syu')
                     },
-                    background="#2f343f"
+                    background=darkgray
                 ),
                 custom_volume.Volume(
                     foreground=offwhite,
