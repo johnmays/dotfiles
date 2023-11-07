@@ -15,7 +15,7 @@ qtile:
     ☐ change appearance of run & power menus (rofi)
 
 qtile bar:
-    ☐ add both bats
+    ✔ add both bats @done(23-11-07 04:51)
     ☐ wifi widget
     ☐ power icon png/svg?
     ☐ redmode battery
@@ -33,6 +33,10 @@ VSCode:
     ☐ add list of extensions to repo
     ☐ add configuration to repo
     ☐ add keybindings to repo
+
+VSCode Issue:
+    ☐ try: adding custom code within the json syntax that vscode wants to put there
+    ☐ switch to a different install e.g. code instead of code-oss
 
 Bash:
     ✔ figure out what the emulator actually is: XFCE4 @done(23-11-05 23:27)
