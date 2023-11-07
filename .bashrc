@@ -84,5 +84,5 @@ _open_files_for_editing() {
 # alias ef='_open_files_for_editing'     # 'ef' opens given file(s) for editing
 # alias pacdiff=eos-pacdiff
 ################################################################################
-
 alias cfg='/usr/bin/git --git-dir=/home/johnmays/.cconfig.git/ --work-tree=/home/johnmays'
+PS1="\u \$ "
