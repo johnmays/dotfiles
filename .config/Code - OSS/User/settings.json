@@ -1,5 +1,6 @@
 {    
-    
+"workbench.settings.editor": "json",  
+"window.zoomLevel": 2,     
 "workbench.colorCustomizations": {
         "$schema": "vscode://schemas/color-theme",
         "type": "dark",
