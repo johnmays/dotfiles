@@ -53,17 +53,18 @@ screens = [
                 widget.Sep(padding=pad_length, linewidth=0, background=darkergray),
                 widget.Sep(padding=pad_length, linewidth=0, background=darkgray),
                 widget.Battery(
-                    charge_char = "^",
-                    discharge_char = "",
-                    full_char = "",
-                    empty_char = "",
-                    not_charging_char = "",
-                    unknown_char = "",
-                    format = "BAT: {percent:2.0%}{char}",
+                    battery = 0,
+                    format = "BAT0: {percent:2.0%},",
                     show_short_text = False,
                     foreground = offwhite
                 ),
-                widget.Sep(padding=pad_length, linewidth=0, background=darkgray),
+                widget.Battery(
+                    battery = 1,
+                    format = "BAT1: {percent:2.0%}",
+                    show_short_text = False,
+                    foreground = offwhite
+                ),
+                # widget.Sep(padding=pad_length, linewidth=0, background=darkgray),
                 # widget.Bluetooth(),
                 # widget.Wlan(),
                 widget.Sep(padding=pad_length, linewidth=0, background=darkgray),

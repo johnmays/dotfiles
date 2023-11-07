@@ -7,10 +7,6 @@ terminal = "alacritty"
 
 keys = [
     # Switch between windows
-    Key([mod], "h", lazy.layout.left(), desc="Move focus to left"),
-    Key([mod], "l", lazy.layout.right(), desc="Move focus to right"),
-    Key([mod], "j", lazy.layout.down(), desc="Move focus down"),
-    Key([mod], "k", lazy.layout.up(), desc="Move focus up"),
     Key([mod],
         "space",
         lazy.layout.next(),
@@ -21,29 +17,38 @@ keys = [
     # Move windows between left/right columns or move up/down in current stack.
     # Moving out of range in Columns layout will create new column.
     Key([mod, "shift"],
-        "h",
-        lazy.layout.shuffle_left(),
-        desc="Move window to the left"),
+        "Up",
+        lazy.layout.shuffle_up(),
+        desc="Move window up"
+        ),
     Key([mod, "shift"],
-        "l",
-        lazy.layout.shuffle_right(),
-        desc="Move window to the right"),
+        "Left",
+        lazy.layout.shuffle_up(),
+        desc="Move window up"
+        ),
     Key([mod, "shift"],
-        "j",
+        "Down",
         lazy.layout.shuffle_down(),
-        desc="Move window down"),
-    Key([mod, "shift"], "k", lazy.layout.shuffle_up(), desc="Move window up"),
-
+        desc="Move window down"
+        ),
+    Key([mod, "shift"],
+        "Right",
+        lazy.layout.shuffle_down(),
+        desc="Move window down"
+        ),
     # Grow windows. If current window is on the edge of screen and direction
     # will be to screen edge - window would shrink.
     Key([mod, "control"],
-        "h",
+        "Up",
         lazy.layout.grow(),
-        desc="Grow window"),
+        desc="Grow window"
+        ),
     Key([mod, "control"],
-        "l",
+        "Down",
         lazy.layout.shrink(),
-        desc="Shrink window"),
+        desc="Shrink window"
+        ),
+
     Key([mod], "n", lazy.layout.normalize(), desc="Reset all window sizes"),
 
     # Toggle between split and unsplit sides of stack.
@@ -60,7 +65,7 @@ keys = [
     Key([mod], "Tab", lazy.next_layout(), desc="Toggle between layouts"),
     Key([mod], "w", lazy.window.kill(), desc="Kill focused window"),
     Key([mod, "shift", "control"], "h", lazy.layout.swap_column_left()),
-    Key([mod, "shift", "control"], "l", lazy.layout.swap_column_right()),
+    Key([mod, "shift", "control"], "l", lazy.layout.swap_colscreenumn_right()),
     Key([mod, "shift"], "space", lazy.layout.flip()),
     Key([mod, "control"], "r", lazy.restart(), desc="Restart Qtile"),
     Key([mod, "control"], "q", lazy.shutdown(), desc="Shutdown Qtile"),
