@@ -85,4 +85,4 @@ _open_files_for_editing() {
 # alias pacdiff=eos-pacdiff
 ################################################################################
 alias cfg='/usr/bin/git --git-dir=/home/johnmays/.cconfig.git/ --work-tree=/home/johnmays'
-PS1="\u \$ "
+PS1="\u \W \$ "
