@@ -28,7 +28,11 @@ class ColorReplacer():
         r = int(color[1:3], 16)
         g = int(color[3:5], 16)
         b = int(color[5:7], 16)
-        return (r, g, b)   
+        if len(color) == 7:
+            return (r, g, b)   
+        else:
+            a = int(color[7:9], 16)
+            return(r, g, b, a)
     
     def __distance(self, color1, color2):
         return math.sqrt(abs(color1[0]-color2[0])**2 +
@@ -36,12 +40,15 @@ class ColorReplacer():
         abs(color1[2]-color2[2])**2)
 
     def __find_closest_color(self, color):
-        color = self.__hex2rgb(color)
+        color_tuple = self.__hex2rgb(color)
         distances = []
         for master_color in self.master_colors:
-            master_color = self.__hex2rgb(master_color)
-            distances.append(self.__distance(color, master_color))
-        return self.master_colors[distances.index(min(distances))]
+            master_color_tuple = self.__hex2rgb(master_color)
+            distances.append(self.__distance(color_tuple, master_color_tuple))
+        if len(color) == 7:
+            return self.master_colors[distances.index(min(distances))]
+        else:
+            return self.master_colors[distances.index(min(distances))] + color[-2:]
 
     def replace(self):
         data_colors = []
