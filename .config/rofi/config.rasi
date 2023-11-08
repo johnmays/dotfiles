@@ -4,7 +4,7 @@
  *******************************************************/
 
 configuration {
-    font:				"Cascadia Code 12";
+    font:				"Input Mono 14";
     show-icons:				true;
     icon-theme:				"Arc-X-D";
     display-drun:			"Apps";

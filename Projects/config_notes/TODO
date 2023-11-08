@@ -18,7 +18,7 @@ qtile bar:
     ✔ add both bats @done(23-11-07 04:51)
     ☐ wifi widget
     ☐ power icon png/svg?
-    ☐ redmode battery
+    ✔ redmode battery @done(23-11-08 00:06)
 
 Applications:
     ✔ yt-dlp @done(23-11-06 23:50)
@@ -35,8 +35,10 @@ VSCode:
     ☐ add keybindings to repo
 
 VSCode Issue:
-    ☐ try: adding custom code within the json syntax that vscode wants to put there
-    ☐ switch to a different install e.g. code instead of code-oss
+    ✔ running python script on the vscode-generated json @done(23-11-07 22:54)
+    ✔ scanning through it: changing to a custom theme @done(23-11-07 22:54)
+    ✔ try: adding custom code within the json syntax that vscode wants to put there @done(23-11-07 22:54)
+    ✘ switch to a different install e.g. code instead of code-oss @cancelled(23-11-07 22:53)
 
 Bash:
     ✔ figure out what the emulator actually is: XFCE4 @done(23-11-05 23:27)
@@ -45,6 +47,7 @@ Bash:
 
 Scripts:
     ☐ comment code for color parser
+    ☐ remake color parser
 
 Alacritty:
     ✔ change prompt @done(23-11-06 20:35)
@@ -63,16 +66,17 @@ Misc:
     ☐ get better at touch typing
     ☐ find touch typing program
     ☐ find notes program
-    ☐ find and document qtile keybinds
-    ☐ directory aliases in thunar or filesystem?
+    ✘ directory aliases in thunar or filesystem? @cancelled(23-11-08 00:01)
     ☐ bluetooth in startup script?
     ☐ download ambient music
-    ☐ add bright & dark green to color scheme
+    ✔ add bright & dark green to color scheme @done(23-11-08 00:01)
+    ☐ add new colors to repo
 
 Repo:
     ☐ add computer to readme
     ☐ add bare repo to readme
     ☐ add screenshot to readme
     ☐ add flameshot to readme
-    ☐ add bluetooth to readme
+    ☐ add bluetooth to readmes
     ☐ shell script to update yay and pacman packages
+    ☐ re-organize color utility script; rename it as well
