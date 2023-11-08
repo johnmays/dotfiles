@@ -12,12 +12,13 @@ qtile:
     ✔ figure out how to retile @done(23-11-06 19:53)
     ✔ figure out how to scale tiles @done(23-11-06 19:53)
     ✔ change keybindings to be more coherent @done(23-11-06 23:30)
-    ☐ change appearance of run & power menus (rofi)
+    ✔ change appearance of run & power menus (rofi) @done(23-11-08 06:01)
 
 qtile bar:
     ✔ add both bats @done(23-11-07 04:51)
     ☐ wifi widget
     ☐ power icon png/svg?
+    ☐ pause/ffw/rw?
     ✔ redmode battery @done(23-11-08 00:06)
 
 Applications:
@@ -27,11 +28,11 @@ Applications:
     
 VSCode:
     ☐ configure extensions
-    ☐ document of shortcuts
+    ✔ document of shortcuts @done(23-11-08 07:11)
     ☐ change shortcuts
-    ☐ add snippets
-    ☐ add list of extensions to repo
-    ☐ add configuration to repo
+    ✔ add snippets @done(23-11-08 05:59)
+    ✔ add list of extensions to repo @done(23-11-08 07:03)
+    ✔ add configuration to repo @done(23-11-08 05:59)
     ☐ add keybindings to repo
 
 VSCode Issue:
@@ -43,7 +44,7 @@ VSCode Issue:
 Bash:
     ✔ figure out what the emulator actually is: XFCE4 @done(23-11-05 23:27)
     ✔ list of commands @done(23-11-05 23:28)
-    ☐ address copy/paste issue
+    ✔ address copy/paste issue (soln: add shift ) @done(23-11-08 06:01)
 
 Scripts:
     ☐ comment code for color parser
@@ -67,8 +68,9 @@ Misc:
     ☐ find touch typing program
     ☐ find notes program
     ✘ directory aliases in thunar or filesystem? @cancelled(23-11-08 00:01)
-    ☐ bluetooth in startup script?
-    ☐ download ambient music
+    ✔ bluetooth in startup script? @done(23-11-08 07:06)
+    ☐ test bt script on startup
+    ✔ download ambient music @done(23-11-08 06:56)
     ✔ add bright & dark green to color scheme @done(23-11-08 00:01)
     ☐ add new colors to repo
 
@@ -77,6 +79,7 @@ Repo:
     ☐ add bare repo to readme
     ☐ add screenshot to readme
     ☐ add flameshot to readme
-    ☐ add bluetooth to readmes
-    ☐ shell script to update yay and pacman packages
-    ☐ re-organize color utility script; rename it as well
+    ☐ add bluetooth to readme
+    ✔ shell script to update yay and pacman packages @done(23-11-08 07:06)
+    ☐ re-organize color utility script
+    ✔ rename it as well @done(23-11-08 07:06)
