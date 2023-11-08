@@ -56,27 +56,31 @@ screens = [
                     battery = 0,
                     format = "BAT0: {percent:2.0%},",
                     show_short_text = False,
-                    foreground = offwhite
+                    foreground = offwhite,
+                    low_foreground = red
                 ),
                 widget.Battery(
                     battery = 1,
                     format = "BAT1: {percent:2.0%}",
                     show_short_text = False,
-                    foreground = offwhite
+                    foreground = offwhite,
+                    low_foreground = red
                 ),
                 # widget.Sep(padding=pad_length, linewidth=0, background=darkgray),
                 # widget.Bluetooth(),
                 # widget.Wlan(),
                 widget.Sep(padding=pad_length, linewidth=0, background=darkgray),
+                widget.Sep(padding=pad_length, linewidth=0, background=darkergray),
                 widget.TextBox( # Power button
                     text='',
                     mouse_callbacks= {
                         'Button1':
                         lambda: qtile.cmd_spawn(os.path.expanduser('~/.config/rofi/powermenu.sh'))
                     },
-                    foreground=red
+                    foreground=red,
+                    background=darkergray
                 ),
-                widget.Sep(padding=pad_length, linewidth=0, background=darkgray)
+                widget.Sep(padding=pad_length, linewidth=0, background=darkergray)
             ],
             48,  # height in px
             background=darkgray  # background color
