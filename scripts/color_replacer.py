@@ -5,8 +5,9 @@ import math
 
 
 class ColorReplacer():
-    def __init__(self, data_path, protocol):
+    def __init__(self, data_path, protocol, color_mode):
         self.data_path = data_path
+        self.color_mode = color_mode
         if protocol == "syntax":
             self.master_colors = [
                 "#555c61",
@@ -50,31 +51,62 @@ class ColorReplacer():
             a = int(color[7:9], 16)
             return(r, g, b, a)
     
+    def __rofi2rgb(self, color):
+        assert type(color) is str # "(r, g, b, a % )"
+        return tuple(list(map(lambda x: int(x), re.findall("[0-9]+", color))))
+
+    def __rgb2rofi(self, color):
+        assert type(color) is tuple # (r,g,b) or (r,g,b,a)
+        assert (len(color) == 3 or len(color) == 4)
+        if len(color) == 3:
+            r,g,b = color
+            return "( {r}, {g}, {b}, 100 % )".format(r=r, g=g, b=b)
+        else:
+            r,g,b,a = color
+            return "( {r}, {g}, {b}, {a} % )".format(r=r, g=g, b=b, a=a)
+
+    def __hex2rofi(self, color):
+        assert type(color) is str # "#ffffff" or "#ffffffff"
+        return self.__rgb2rofi(self.__hex2rgb(color))
+
     def __distance(self, color1, color2):
         return math.sqrt(abs(color1[0]-color2[0])**2 +
         abs(color1[1]-color2[1])**2 +
         abs(color1[2]-color2[2])**2)
 
     def __find_closest_color(self, color):
-        color_tuple = self.__hex2rgb(color)
+        if self.color_mode == "hex":
+            color_tuple = self.__hex2rgb(color)
+        else:
+            color_tuple = self.__rofi2rgb(color)
         distances = []
         for master_color in self.master_colors:
             master_color_tuple = self.__hex2rgb(master_color)
             distances.append(self.__distance(color_tuple, master_color_tuple))
-        if len(color) == 7:
-            return self.master_colors[distances.index(min(distances))]
+        if self.color_mode == "hex":
+            if len(color) == 7:
+                return self.master_colors[distances.index(min(distances))]
+            else:
+                return self.master_colors[distances.index(min(distances))] + color[-2:]
         else:
-            return self.master_colors[distances.index(min(distances))] + color[-2:]
+            return self.__hex2rofi(self.master_colors[distances.index(min(distances))])
 
     def replace(self):
         data_colors = []
 
         with open(data_path, 'r') as data:
-            for line in data.readlines():
-                colors = re.findall("\#[A-Fa-f0-9]{6}", line)
-                colors += re.findall("\#[A-Fa-f0-9]{8}", line)
-                for color in colors:
-                    data_colors.append(color)
+            if color_mode == "hex":
+                for line in data.readlines():
+                    colors = re.findall("\#[A-Fa-f0-9]{6}", line)
+                    colors += re.findall("\#[A-Fa-f0-9]{8}", line)
+                    for color in colors:
+                        data_colors.append(color)
+            else:
+                for line in data.readlines():
+                    colors = re.findall("\( [0-9]*, [0-9]*, [0-9]*, [0-9]* \% \)", line)
+                    for color in colors:
+                        data_colors.append(color)
+
 
         data_colors = list(set(data_colors))
         replacement_colors = []
@@ -101,6 +133,7 @@ if __name__ == '__main__':
     parser = argparse.ArgumentParser(description='Run color replacement.')
     parser.add_argument('path', metavar='PATH', type=str, help='The path to the file that will be parsed & have its colors replaced.')
     parser.add_argument('-p', '--protocol', dest='protocol', type=str, required=False)
+    parser.add_argument('-m', '--color-mode', dest='color_mode', type=str, required=False)
     args = parser.parse_args()
 
     # You can access args with the dot operator like so:
@@ -112,7 +145,14 @@ if __name__ == '__main__':
         protocol = args.protocol
     else:
         raise(ValueError("Invalid Argument: please set protocol to either 'syntax' or 'program'"))
+    color_mode = ""
+    if args.color_mode is None:
+        color_mode = "hex" # default if nothing is specified
+    elif args.color_mode in ["hex", "rofi"]:
+        color_mode = args.color_mode
+    else:
+        raise(ValueError("Invalid Argument: please set protocol to either 'syntax' or 'program'"))
 
-    print("Running replacer of type: {p}".format(p=protocol))
-    replacer = ColorReplacer(data_path,protocol)
+    print("Running replacer of type: {p}\n and color mode: {c}".format(p=protocol, c = color_mode))
+    replacer = ColorReplacer(data_path, protocol, color_mode)
     replacer.replace()

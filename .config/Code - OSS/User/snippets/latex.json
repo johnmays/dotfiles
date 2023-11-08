@@ -1,0 +1,92 @@
+{
+	"TeX Matrix (johnmays)" :{
+		"prefix": "mat",
+		"body": ["\\begin{matrix}",
+				"\tA$1 & B\\\\\\",
+				"\tC & D",
+				"\\end{matrix}"],
+		"description": "TEX Mathmode Matrix"
+	},
+
+	"TeX Tabular (johnmays)" :{
+		"prefix": "tab",
+		"body": ["\\begin{tabular}{|c|c|$1}",
+				"\t\\hline",
+				"\tA & B\\\\\\",
+				"\t\\hline",
+				"\tC & D\\\\\\",
+				"\t\\hline",
+				"\\end{tabular}"],
+		"description": "TEX table"
+	},
+
+	"TeX Image (johnmays)" : {
+		"prefix": "im",
+		"body": "\\includegraphics[scale=0.5]{path$1}",
+		"description": "TeX image display"
+	},
+
+	"TeX Figure (johnmays)":{
+		"prefix": "fig",
+		"body": [
+				"\\begin{figure}[h]",
+				"\t$1",
+				"\t\\caption{cap}",
+				"\\end{figure}"
+		],
+		"description": "TeX Figure Skeleton"
+	},
+
+	"Document Template (johnmays)" :{
+		"prefix": "begin",
+		"body": ["\\documentclass{article}",
+				"\\usepackage[utf8]{inputenc}",
+				"\\usepackage[letterpaper, total={6.5in, 9in}]{geometry}",
+				"\\usepackage{amsmath}",
+				"\\usepackage{amssymb}",
+				"\\usepackage{relsize}",
+				"\\usepackage[none]{hyphenat}",
+				"\\usepackage{graphicx}",
+				" ",
+				"\\title{title$1}",
+				"\\author{author}",
+				"\\date{date}",
+				"\\begin{document}",
+				"\t\\maketitle",
+				"\tfoo",
+				"\\end{document}"],
+		"description": "LaTeX Document Template with common libs"
+	},
+
+	"Minipage (johnmays)" :{
+		"prefix": "minipage",
+		"body": [
+			"\\begin{minipage}{0.5\\textwidth}",
+			"\tfoo",
+			"\\end{minipage}",
+			"\\begin{minipage}{0.5\\textwidth}",
+			"\tgoo",
+			"\\end{minipage}"
+		],
+		"description": "Creates side by side half-width minipages"
+	},
+
+	"Italic (johnmays)" :{
+		"prefix": "it",
+		"body": "\\textit{$1}",
+		"description": "Italic environment"
+	},
+
+	"Bold (johnmays)" :{
+		"prefix": "bo",
+		"body": "\\textbf{$1}",
+		"description": "Bold environment"
+	},
+
+	"Code/Verbatim (johnmays)" :{
+		"prefix": "co",
+		"body": "\\verb|$1|",
+		"description": "Verbatim environment"
+	}
+
+}

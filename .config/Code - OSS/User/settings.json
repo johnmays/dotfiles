@@ -18,8 +18,8 @@
 		"editor.inactiveSelectionBackground": "#3c4549",
 		"editor.selectionHighlightBackground": "#c6c7c826",
 		"editorError.border": "#bb4542",
-		"editorIndentGuide.activeBackground": "#555c61",
-		"editorIndentGuide.background": "#3c4549",
+		"editorIndentGuide.activeBackground1": "#555c61",
+		"editorIndentGuide.background1": "#3c4549",
 		"input.placeholderForeground": "#adafb1",
 		"list.activeSelectionIconForeground": "#c6c7c8",
 		"list.dropBackground": "#3c4549",
@@ -37,7 +37,7 @@
 		"terminal.inactiveSelectionBackground": "#3c4549",
 		"widget.border": "#24282a"
 	},
-	"editor.semanticHighlighting.enabled": true,
+	"editor.semanticHighlighting.enabled": false,
 	"editor.tokenColorCustomizations": {
 		"textMateRules": [
 			//   {
