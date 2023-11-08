@@ -5,22 +5,38 @@ import math
 
 
 class ColorReplacer():
-    def __init__(self, data_path):
+    def __init__(self, data_path, protocol):
         self.data_path = data_path
-        self.master_colors = [
-            "#171b1c",
-            "#24282a",
-            "#3c4549",
-            "#555c61",
-            "#adafb1",
-            "#c6c7c8",
-            "#0d4662",
-            "#07628f",
-            "#017dbb",
-            "#bb4542",
-            "#bb6742",
-            "#bc955c"
-        ] 
+        if protocol == "syntax":
+            self.master_colors = [
+                "#555c61",
+                "#adafb1",
+                "#c6c7c8",
+                "#0d4662",
+                "#07628f",
+                "#017dbb",
+                "#bb4542",
+                "#bb6742",
+                "#bc955c",
+                "#3d683b",
+                "#647c50",
+                "#4a3957"
+            ]
+        else: # (if protocol == "program")
+            self.master_colors = [
+                "#171b1c",
+                "#24282a",
+                "#3c4549",
+                "#555c61",
+                "#adafb1",
+                "#c6c7c8",
+                "#0d4662",
+                "#07628f",
+                "#017dbb",
+                "#bb4542",
+                "#bb6742",
+                "#bc955c"
+            ]
      
     def __hex2rgb(self, color):
         assert type(color) is str
@@ -84,10 +100,19 @@ if __name__ == '__main__':
     # Set up argparse arguments
     parser = argparse.ArgumentParser(description='Run color replacement.')
     parser.add_argument('path', metavar='PATH', type=str, help='The path to the file that will be parsed & have its colors replaced.')
+    parser.add_argument('-p', '--protocol', dest='protocol', type=str, required=False)
     args = parser.parse_args()
 
     # You can access args with the dot operator like so:
     data_path = os.path.expanduser(args.path)
+    protocol = ""
+    if args.protocol is None:
+        protocol = "program" # default if nothing is specified
+    elif args.protocol in ["program", "syntax"]:
+        protocol = args.protocol
+    else:
+        raise(ValueError("Invalid Argument: please set protocol to either 'syntax' or 'program'"))
 
-    replacer = ColorReplacer(data_path)
+    print("Running replacer of type: {p}".format(p=protocol))
+    replacer = ColorReplacer(data_path,protocol)
     replacer.replace()
