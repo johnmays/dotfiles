@@ -13,6 +13,10 @@ qtile:
     ✔ figure out how to scale tiles @done(23-11-06 19:53)
     ✔ change keybindings to be more coherent @done(23-11-06 23:30)
     ✔ change appearance of run & power menus (rofi) @done(23-11-08 06:01)
+    ☐ find color for floating window outlines
+    ☐ increase size of window borders by 1 or 2 px
+    ☐ flameshot gui shortcut
+    ☐ change mouse
 
 qtile bar:
     ✔ add both bats @done(23-11-07 04:51)
@@ -24,7 +28,9 @@ qtile bar:
 Applications:
     ✔ yt-dlp @done(23-11-06 23:50)
     ✔ media player (nsxiv) @done(23-11-06 23:54)
-    ✔ mpv (images) @done(23-11-06 23:54)
+    ✔ mpv (videos) @done(23-11-06 23:54)
+    ☐ image viewer
+    ☐ delete display utility (magick)
     
 VSCode:
     ☐ configure extensions
@@ -49,18 +55,20 @@ Bash:
 Scripts:
     ☐ comment code for color parser
     ☐ remake color parser
+    ☐ helpful commands script
+    ☐ imsize script & alias
 
 Alacritty:
     ✔ change prompt @done(23-11-06 20:35)
 
 Thunar:
     ☐ change colors
-    ☐ change font
+    ☐ change fonthttps://archlinux.org/packages/extra/x86_64/bluez/
 
 Firefox:
     ☐ change colors
     ☐ change text size
-    ☐ change font
+    ☐ change fontcompleted
     ☐ remove icon?
 
 Misc:
@@ -68,18 +76,20 @@ Misc:
     ☐ find touch typing program
     ☐ find notes program
     ✘ directory aliases in thunar or filesystem? @cancelled(23-11-08 00:01)
-    ✔ bluetooth in startup script? @done(23-11-08 07:06)
+    ✔ bluetooth in startup script? @    ☐ flameshot gui shortcutdone(23-11-08 07:06)
     ☐ test bt script on startup
     ✔ download ambient music @done(23-11-08 06:56)
     ✔ add bright & dark green to color scheme @done(23-11-08 00:01)
-    ☐ add new colors to repo
+    ☐ perhaps think of a better place for config_assets and config_notes to go
+    ☐ move them, commit them, and change all references to bg & references to colors in readme
 
 Repo:
-    ☐ add computer to readme
-    ☐ add bare repo to readme
-    ☐ add screenshot to readme
-    ☐ add flameshot to readme
-    ☐ add bluetooth to readme
+    ✔ add computer to readme @done(23-11-08 08:48)
+    ✔ add bare repo to readme @done(23-11-08 08:48)
+    ✔ add flameshot to readme @done(23-11-08 08:48)
+    ✔ add bluetooth to readme @done(23-11-08 08:48)
+    ☐ add new colors to d
+    ☐ add nsxiv to readme
+    ☐ add mpv to readme
     ✔ shell script to update yay and pacman packages @done(23-11-08 07:06)
-    ☐ re-organize color utility script
     ✔ rename it as well @done(23-11-08 07:06)
