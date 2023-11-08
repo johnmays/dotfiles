@@ -54,7 +54,7 @@ Aesthetics are very important to me.
 ### Colors:
 These are completely custom
 #### Core palette:
-<img src="./Projects/config_assets/colors/colors_01.png" width="900" height="200" />
+<img src="./Projects/config_assets/colors/colors_01.png" width="600" height="200" />
 
 #### Extra colors for editor:
 <img src="./Projects/config_assets/colors/colors_01_extra.png" width="200" height="200" />
