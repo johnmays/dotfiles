@@ -14,7 +14,7 @@
 		"activityBarBadge.background": "#017dbb",
 		"checkbox.border": "#555c61",
 		"editor.background": "#171b1c",
-		"editor.foreground": "#c6c7c8",
+		"editor.foreground": "#c6c7c8",//
 		"editor.inactiveSelectionBackground": "#3c4549",
 		"editor.selectionHighlightBackground": "#c6c7c826",
 		"editorError.border": "#bb4542",
@@ -37,4 +37,31 @@
 		"terminal.inactiveSelectionBackground": "#3c4549",
 		"widget.border": "#24282a"
 	},
+	// "editor.semanticTokenColorCustomizations": {
+	// 	"[Visual Studio Dark]": {
+	// 		"rules": {
+	// 			"string": { "foreground": "#00ff00" }
+	// 		}
+	// 	}
+	// }
+	"editor.semanticHighlighting.enabled": false,
+	"editor.tokenColorCustomizations": {
+		"textMateRules": [
+		//   {
+		// 	  "scope": "string.quoted.double.json.comments",
+		// 	  "settings": {
+		// 		  "foreground": "#FF0000"
+		// 	  }
+		//   },
+			{
+				"scope": [
+					"string",
+					"meta.embedded.assembly"
+				],
+				"settings": {
+					"foreground": "#ffff00"
+				}
+			},
+		]
+	}	  
 }
