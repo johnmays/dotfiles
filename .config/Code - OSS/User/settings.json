@@ -35,7 +35,10 @@
 		"statusBarItem.remoteForeground": "#c6c7c8",
 		"tab.lastPinnedBorder": "#c6c7c833",
 		"terminal.inactiveSelectionBackground": "#3c4549",
-		"widget.border": "#24282a"
+		"widget.border": "#24282a",
+		"editorBracketHighlight.foreground1": "#bb674d",
+		"editorBracketHighlight.foreground2": "#07628f",
+		"editorBracketHighlight.foreground3": "#bb4542"
 	},
 	"editor.semanticHighlighting.enabled": false,
 	"editor.tokenColorCustomizations": {
@@ -432,5 +435,12 @@
 				}
 			}
 		]
-	}	  
+	},
+	"window.titleBarStyle": "custom",
+	"workbench.statusBar.visible": false,
+	"workbench.layoutControl.type": "menu",
+	"window.menuBarVisibility": "compact",
+	"workbench.layoutControl.enabled": false,
+	"window.commandCenter": false,
+	"editor.bracketPairColorization.enabled": true
 }

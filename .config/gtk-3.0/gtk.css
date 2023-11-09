@@ -1,0 +1,19 @@
+.thunar * {
+    font-family: Input Mono;
+    font-size: 16px;
+    color: #c6c7c8;
+	background-color: #3c4549;
+}
+
+.thunar entry {
+    color: #07628f;
+    background-color: #24282a;
+}
+
+.thunar .view {
+    background-color: #24282a;
+}
+
+.thunar .view treeview {
+    background-color: #3c4549;
+}

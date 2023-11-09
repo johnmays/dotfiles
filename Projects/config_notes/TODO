@@ -40,6 +40,8 @@ VSCode:
     ✔ add list of extensions to repo @done(23-11-08 07:03)
     ✔ add configuration to repo @done(23-11-08 05:59)
     ☐ add keybindings to repo
+    ✔ add bracket pair colorization colors @done(23-11-08 09:29)
+    ☐ customize extension thumbnail colors
 
 VSCode Issue:
     ✔ running python script on the vscode-generated json @done(23-11-07 22:54)
@@ -80,7 +82,7 @@ Misc:
     ☐ test bt script on startup
     ✔ download ambient music @done(23-11-08 06:56)
     ✔ add bright & dark green to color scheme @done(23-11-08 00:01)
-    ☐ perhaps think of a better place for config_assets and config_notes to go
+    ☐ perhaps think of a better place for config_assets, config_notes, and TODO to go
     ☐ move them, commit them, and change all references to bg & references to colors in readme
 
 Repo:
@@ -88,7 +90,8 @@ Repo:
     ✔ add bare repo to readme @done(23-11-08 08:48)
     ✔ add flameshot to readme @done(23-11-08 08:48)
     ✔ add bluetooth to readme @done(23-11-08 08:48)
-    ☐ add new colors to d
+    ✔ add new colors to readme @done(23-11-08 09:01)
+    ☐ add desktop screenshot to readme
     ☐ add nsxiv to readme
     ☐ add mpv to readme
     ✔ shell script to update yay and pacman packages @done(23-11-08 07:06)
