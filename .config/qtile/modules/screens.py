@@ -2,6 +2,7 @@ from libqtile import bar
 from modules.widgets import *
 from libqtile.config import Screen
 from modules.keys import terminal
+from libqtile.lazy import lazy
 import os
 from modules.colors import *
 from modules.custom_widgets import custom_groupbox, custom_volume
@@ -29,21 +30,45 @@ screens = [
                 ),
                 widget.Spacer(length=5),
                 widget.WindowName(foreground=lightblue,fmt='{}'),
-                widget.CheckUpdates(
-                    update_interval=1800,
-                    distro="Arch_yay",
-                    display_format="{updates} Updates",
-                    foreground=offwhite,
-                    mouse_callbacks={
-                        'Button1':
-                        lambda: qtile.cmd_spawn(terminal + ' -e yay -Syu')
-                    },
-                    background=darkgray
-                ),
+                # widget.CheckUpdates(
+                #     update_interval=1800,
+                #     distro="Arch_yay",
+                #     display_format="{updates} Updates",
+                #     foreground=offwhite
+                # ),
+                # THIS IS WHERE THE ALIGNMENT SEPARATION IS
                 custom_volume.Volume(
                     foreground=offwhite,
                     background=darkgray
                 ),
+                # widget.Mpris2(),
+                # widget.TextBox( # RW button
+                #     text='⏪',
+                #     mouse_callbacks= {
+                #         'Button1':
+                #         lambda: lazy.widget["mpris2"].previous()
+                #     },
+                #     foreground=offwhite,
+                #     background=darkgray
+                # ),
+                # widget.TextBox( # Pause buttons
+                #     text='⏸',
+                #     mouse_callbacks= {
+                #         'Button1':
+                #         lambda: lazy.widget["mpris2"].play_pause()
+                #     },
+                #     foreground=offwhite,
+                #     background=darkgray
+                # ),
+                # widget.TextBox( # FFW button
+                #     text='⏩',
+                #     mouse_callbacks= {
+                #         'Button1':
+                #         lambda: lazy.widget["mpris2"].next()
+                #     },
+                #     foreground=offwhite,
+                #     background=darkgray
+                # ),
                 widget.Sep(padding=pad_length, linewidth=0, background=darkgray),
                 widget.Sep(padding=pad_length, linewidth=0, background=darkergray),
                 widget.Clock(format='%m/%d/%Y %a %I:%M %p',
@@ -54,7 +79,7 @@ screens = [
                 widget.Sep(padding=pad_length, linewidth=0, background=darkgray),
                 widget.Battery(
                     battery = 0,
-                    format = "BAT0: {percent:2.0%},",
+                    format = "{percent:2.0%},",
                     show_short_text = False,
                     foreground = offwhite,
                     low_foreground = red,
@@ -62,7 +87,7 @@ screens = [
                 ),
                 widget.Battery(
                     battery = 1,
-                    format = "BAT1: {percent:2.0%}",
+                    format = "{percent:2.0%}",
                     show_short_text = False,
                     foreground = offwhite,
                     low_foreground = red,
