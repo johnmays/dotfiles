@@ -1,7 +1,7 @@
 # @johnmays dotfiles
 My Linux build's configuration files.  
 
-![screen capture of build](assets/screen_cap.mp4)
+https://github.com/johnmays/dotfiles/assets/25927827/37eb6acd-cf6e-47dd-ba3f-b4322d3b4fb2
 
 ## Goals:
 My goals for this system are to modify it so that it:
