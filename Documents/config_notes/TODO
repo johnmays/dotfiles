@@ -59,18 +59,21 @@ Scripts:
     ☐ remake color parser
     ☐ helpful commands script
     ☐ imsize script & alias
+    ☐ bash script for timed reset of qtile
+    ☐ TODO alias
 
 Alacritty:
     ✔ change prompt @done(23-11-06 20:35)
 
 Thunar:
-    ☐ change colors
-    ☐ change fonthttps://archlinux.org/packages/extra/x86_64/bluez/
+    ✔ change colors @done(23-11-09 06:27)
+    ✔ change font @done(23-11-09 06:27)
+    ☐ change file icons
 
 Firefox:
     ☐ change colors
     ☐ change text size
-    ☐ change fontcompleted
+    ☐ change font
     ☐ remove icon?
 
 Misc:
@@ -82,10 +85,15 @@ Misc:
     ☐ test bt script on startup
     ✔ download ambient music @done(23-11-08 06:56)
     ✔ add bright & dark green to color scheme @done(23-11-08 00:01)
-    ☐ perhaps think of a better place for config_assets, config_notes, and TODO to go
-    ☐ move them, commit them, and change all references to bg & references to colors in readme
+    ✔ perhaps think of a better place for config_assets, config_notes, and TODO to go @done(23-11-09 06:38)
+    ✔ move them, commit them, and change all references to bg & references to colors in readme @done(23-11-09 06:38)
+    ☐ even lighter green for editor (specifically for TODO)
 
-Repo:
+TODO:
+    ☐ edit todo colors
+    ☐ disable extesnions
+
+Repo + Other documentation:
     ✔ add computer to readme @done(23-11-08 08:48)
     ✔ add bare repo to readme @done(23-11-08 08:48)
     ✔ add flameshot to readme @done(23-11-08 08:48)
@@ -97,3 +105,5 @@ Repo:
     ☐ add mpv to readme
     ✔ shell script to update yay and pacman packages @done(23-11-08 07:06)
     ✔ rename it as well @done(23-11-08 07:06)
+    ☐ git bare tutorial
+    ☐ configuring qtile tutorial

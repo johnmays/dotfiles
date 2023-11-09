@@ -442,5 +442,11 @@
 	"window.menuBarVisibility": "compact",
 	"workbench.layoutControl.enabled": false,
 	"window.commandCenter": false,
-	"editor.bracketPairColorization.enabled": true
+	"editor.bracketPairColorization.enabled": true,
+	"todo.colors.cancelled": "#bb4542",
+	"todo.colors.comment": "#bb674d",
+	"todo.colors.done": "#647c50",
+	"todo.colors.project": "#017dbb",
+	"todo.colors.projectStatistics": "#07628f",
+	"todo.colors.tag": "#bc955c"
 }
