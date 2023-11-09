@@ -57,14 +57,16 @@ screens = [
                     format = "BAT0: {percent:2.0%},",
                     show_short_text = False,
                     foreground = offwhite,
-                    low_foreground = red
+                    low_foreground = red,
+                    low_percwntage = 0.1
                 ),
                 widget.Battery(
                     battery = 1,
                     format = "BAT1: {percent:2.0%}",
                     show_short_text = False,
                     foreground = offwhite,
-                    low_foreground = red
+                    low_foreground = red,
+                    low_percwntage = 0.1
                 ),
                 # widget.Sep(padding=pad_length, linewidth=0, background=darkgray),
                 # widget.Bluetooth(),

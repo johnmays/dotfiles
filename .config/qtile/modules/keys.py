@@ -6,6 +6,9 @@ mod = "mod4"
 terminal = "alacritty"
 
 keys = [
+    # Custom
+    Key([mod, "shift"], "s", lazy.spawn("flameshot gui"), desc="spawn screenshot gui"),
+
     # Switch between windows
     Key([mod],
         "space",
