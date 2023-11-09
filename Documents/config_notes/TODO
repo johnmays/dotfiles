@@ -2,7 +2,7 @@ OS:
     ✔ set up git and GH @done(23-11-05 23:27)
     ✔ install spotify @done(23-11-05 23:27)
 
-qtile:
+qtile/X:
     ✔ set background @done(23-11-05 23:27)
     ✘ change UI scale @cancelled(23-11-06 19:52)
     ✔ make color palette myself @done(23-11-05 23:27)
@@ -39,7 +39,7 @@ VSCode:
     ✔ add snippets @done(23-11-08 05:59)
     ✔ add list of extensions to repo @done(23-11-08 07:03)
     ✔ add configuration to repo @done(23-11-08 05:59)
-    ☐ add keybindings to repo
+    ✔ add keybindings to repo @done(23-11-09 08:33)
     ✔ add bracket pair colorization colors @done(23-11-08 09:29)
     ☐ customize extension thumbnail colors
 
@@ -81,7 +81,7 @@ Misc:
     ☐ find touch typing program
     ☐ find notes program
     ✘ directory aliases in thunar or filesystem? @cancelled(23-11-08 00:01)
-    ✔ bluetooth in startup script? @    ☐ flameshot gui shortcutdone(23-11-08 07:06)
+    ☐ bluetooth in startup script?
     ☐ test bt script on startup
     ✔ download ambient music @done(23-11-08 06:56)
     ✔ add bright & dark green to color scheme @done(23-11-08 00:01)
@@ -90,7 +90,7 @@ Misc:
     ☐ even lighter green for editor (specifically for TODO)
 
 TODO:
-    ☐ edit todo colors
+    ✔ edit todo colors @done(23-11-09 15:13)
     ☐ disable extesnions
 
 Repo + Other documentation:

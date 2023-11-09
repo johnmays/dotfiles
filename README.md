@@ -1,5 +1,8 @@
 # @johnmays dotfiles
 My Linux build's configuration files.  
+
+![screen capture of build](assets/screen_cap.mp4)
+
 ## Goals:
 My goals for this system are to modify it so that it:
 - looks good, but very simple
