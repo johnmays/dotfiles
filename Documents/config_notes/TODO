@@ -13,9 +13,9 @@ qtile:
     ✔ figure out how to scale tiles @done(23-11-06 19:53)
     ✔ change keybindings to be more coherent @done(23-11-06 23:30)
     ✔ change appearance of run & power menus (rofi) @done(23-11-08 06:01)
-    ☐ find color for floating window outlines
-    ☐ increase size of window borders by 1 or 2 px
-    ☐ flameshot gui shortcut
+    ✔ find color for floating window outlines @done(23-11-08 21:13)
+    ✔ increase size of window borders by 1 or 2 px @done(23-11-08 21:13)
+    ✔ flameshot gui shortcut @done(23-11-08 21:24)
     ☐ change mouse
 
 qtile bar:
@@ -91,6 +91,7 @@ Repo:
     ✔ add flameshot to readme @done(23-11-08 08:48)
     ✔ add bluetooth to readme @done(23-11-08 08:48)
     ✔ add new colors to readme @done(23-11-08 09:01)
+    ☐ change stretch information for .pngs in readme
     ☐ add desktop screenshot to readme
     ☐ add nsxiv to readme
     ☐ add mpv to readme
