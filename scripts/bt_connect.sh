@@ -20,21 +20,20 @@ echo "Which devices would you like to pair?"
 for i in "${!DEVICES[@]}"; do
     printf "DEVICE: %s? [Y/n] " "${DEVICES[i]}"
     read INPUT_STR
-    if [ ${INPUT_STR,,} = 'y' ]
+    if [ "${INPUT_STR,,}" = "y" ]
     then
         printf "pairing: %s at %s\n" "${DEVICES[i]}" "${ADDRESSES[i]}"
         
-        bluetoothctl
-        power on
-        agent on
-        default-agent
-        scan on
-        # wait
-        pair "${ADDRESSES[i]}"
-        connect "${ADDRESSES[i]}"
+        bluetoothctl power on
+        bluetoothctl agent on
+        bluetoothctl default-agent
+        bluetoothctl scan on
+        # bluetoothctl wait
+        bluetoothctl pair "${ADDRESSES[i]}"
+        bluetoothctl connect "${ADDRESSES[i]}"
     fi
 done
 
-exit
+bluetoothctl exit
 
 echo "Finished"
