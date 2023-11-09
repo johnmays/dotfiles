@@ -86,4 +86,6 @@ _open_files_for_editing() {
 ################################################################################
 alias cfg='/usr/bin/git --git-dir=/home/johnmays/.cconfig.git/ --work-tree=/home/johnmays'
 alias todo='code /home/johnmays/Documents/config_notes/TODO'
+alias bt_c='/home/johnmays/scripts/bt_connect.sh'
+alias record='ffmpeg -video_size 2560x1440 -framerate 30 -f x11grab -i :0.0+0,0 output.mp4'
 PS1="\u \W \$ "
