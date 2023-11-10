@@ -57,10 +57,10 @@ Aesthetics are very important to me.
 ### Colors:
 These are completely custom
 #### Core palette:
-<img src="./assets/colors/colors_01.png" width="600" height="200" />
+<img src="./assets/colors/colors_01.png" width="600" />
 
 #### Extra colors for editor:
-<img src="./assets/colors/colors_01_extra.png" width="200" height="200" />
+<img src="./assets/colors/colors_01_extra.png" width="600" />
 
 ### Font:
 [Input Mono](https://input.djr.com/license/) by David Jonathan Ross
