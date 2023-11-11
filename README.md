@@ -1,7 +1,7 @@
 # @johnmays dotfiles
 My Linux build's configuration files.  
 
-https://github.com/johnmays/dotfiles/assets/25927827/37eb6acd-cf6e-47dd-ba3f-b4322d3b4fb2
+<img src="./assets/screen_cap_01.png" width="1000" />
 
 ## Quick Note:
 This is still a work in progress.  Many programs and GUIs are unfinished.
