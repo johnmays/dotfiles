@@ -1,4 +1,4 @@
-## qtile:
+p## qtile:
 - `qtile cmd-obj -o cmd -f restart` refresh config from local files
 - _super + ctrl + r_ also reloads qtile
 - `qtile cmd-obj -o cmd -f reload_config` same, but if you're using git to version the config

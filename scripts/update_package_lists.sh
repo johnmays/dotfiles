@@ -3,9 +3,9 @@
 # This script is just for quickly updating the 
 # package lists that are in my config repo
 
-PACMAN_PATH="$HOME/Projects/config_notes/pacman_packages.txt"
-YAY_PATH="$HOME/Projects/config_notes/yay_packages.txt"
-CODE_EXTENSION_PATH="$HOME/Projects/config_notes/code_extensions.txt"
+PACMAN_PATH="$HOME/Documents/config_notes/pacman_packages.txt"
+YAY_PATH="$HOME/Documents/config_notes/yay_packages.txt"
+CODE_EXTENSION_PATH="$HOME/Documents/config_notes/code_extensions.txt"
 
 echo updating pacman packages...
 pacman -Qe > $CODE_EXTENSION_PATH

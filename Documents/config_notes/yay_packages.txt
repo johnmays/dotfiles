@@ -28,6 +28,7 @@ dex 0.9.0-1
 dhclient 4.4.3.P1-2
 diffutils 3.10-1
 discord 0.0.34-1
+discord-screenaudio 1.9.2-1
 dmidecode 3.5-1
 dmraid 1.0.0.rc16.3-14
 dnsmasq 2.89-1
@@ -66,7 +67,6 @@ github-cli 2.38.0-1
 glances 3.4.0.3-1
 gst-libav 1.22.6-1
 gst-plugin-pipewire 1:0.3.84-1
-gst-plugins-bad 1.22.6-1
 gst-plugins-ugly 1.22.6-1
 gtk-engine-murrine 0.98.2-4
 gvfs 1.52.1-1
