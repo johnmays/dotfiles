@@ -432,6 +432,12 @@
 				"settings": {
 					"foreground": "#adafb1"
 				}
+			},
+			{
+				"scope": "support.type.python",
+				"settings": {
+					"foreground": "#4a3957"
+				}
 			}
 		]
 	},
@@ -448,5 +454,5 @@
 	"todo.colors.project": "#017dbb",
 	"todo.colors.projectStatistics": "#07628f",
 	"todo.colors.tag": "#bc955c",
-	"window.zoomLevel": 1
+	"window.zoomLevel": 2
 }
