@@ -1,6 +1,5 @@
 {
-    "workbench.startupEditor": "none",
-    "window.zoomLevel": 1,
+	"workbench.startupEditor": "none",
     "explorer.confirmDragAndDrop": false,
     "git.openRepositoryInParentFolders": "always",
     "explorer.confirmDelete": false,
@@ -445,8 +444,9 @@
 	"editor.bracketPairColorization.enabled": true,
 	"todo.colors.cancelled": "#bb4542",
 	"todo.colors.comment": "#bb674d",
-	"todo.colors.done": "#647c50",
+	"todo.colors.done": "#7da56c",
 	"todo.colors.project": "#017dbb",
 	"todo.colors.projectStatistics": "#07628f",
-	"todo.colors.tag": "#bc955c"
+	"todo.colors.tag": "#bc955c",
+	"window.zoomLevel": 1
 }
