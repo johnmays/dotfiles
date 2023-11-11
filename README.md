@@ -1,7 +1,7 @@
 # @johnmays dotfiles
 My Linux build's configuration files.  
 
-<img src="./assets/screen_cap_01.png" width="1000" />
+<img src="./assets/screen_cap_02.png" width="1000" />
 
 ## Quick Note:
 This is still a work in progress.  Many programs and GUIs are unfinished.
