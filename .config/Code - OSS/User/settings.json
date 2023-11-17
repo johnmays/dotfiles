@@ -234,8 +234,8 @@
 		"editorInlayHint.typeForeground": "#adafb1",
 		"editorLightBulb.foreground": "#bc955c",
 		"editorLightBulbAutoFix.foreground": "#adafb1",
-		"editorLineNumber.activeForeground": "#c6c7c8",
-		"editorLineNumber.foreground": "#bc955c",
+		"editorLineNumber.activeForeground": "#017dbb",
+		"editorLineNumber.foreground": "#c6c7c8",
 		"editorLink.activeForeground": "#017dbb",
 		"editorMarkerNavigation.background": "#171b1c",
 		"editorMarkerNavigationError.background": "#bb4542",
@@ -1160,5 +1160,5 @@
 	"todo.colors.project": "#017dbb",
 	"todo.colors.projectStatistics": "#07628f",
 	"todo.colors.tag": "#bc955c",
-	"window.zoomLevel": 2
+	"window.zoomLevel": 1
 }
