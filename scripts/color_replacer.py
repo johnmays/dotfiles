@@ -32,34 +32,40 @@ class ColorReplacer():
         if protocol == "syntax":
             # a color list for syntax highlighting (no dark greys)
             self.master_colors = [
-                "#555c61",
-                "#adafb1",
-                "#c6c7c8",
-                "#0d4662",
-                "#07628f",
-                "#017dbb",
-                "#bb4542",
-                "#bb6742",
-                "#bc955c",
-                "#3d683b",
-                "#647c50",
-                "#4a3957"
+                "#fffe8c",
+                "#034041",
+                "#023737",
+                "#027873",
+                "#046458",
+                "#009f95",
+                "#02aa9c",
+                "#01cfc0",
+                "#1ad6d6",
+                "#cefbfe",
+                "#99f8f8",
+                "#ff6e53",
+                "#ff9d6d",
+                "#ab87c3",
+                "#ff8753",
+                "#bd293c"
             ]
         else: # (if protocol == "program")
             # a color list for programs in general (grays, but no greens)
             self.master_colors = [
-                "#171b1c",
-                "#24282a",
-                "#3c4549",
-                "#555c61",
-                "#adafb1",
-                "#c6c7c8",
-                "#0d4662",
-                "#07628f",
-                "#017dbb",
-                "#bb4542",
-                "#bb6742",
-                "#bc955c"
+                "#020303",
+                "#03100f",
+                "#fffe8c",
+                "#032825",
+                "#034041",
+                "#023737",
+                "#027873",
+                "#046458",
+                "#009f95",
+                "#02aa9c",
+                "#01cfc0",
+                "#1ad6d6",
+                "#cefbfe",
+                "#99f8f8"
             ]
      
     def __hex2rgb(self, color: str) -> tuple:

@@ -11,7 +11,7 @@ pad_length = 6
 
 screens = [
     Screen(
-        wallpaper="~/.config/qtile/background.png",
+        wallpaper="~/assets/backgrounds/background_02.png",
         top=bar.Bar(
             [
                 custom_groupbox.GroupBox(
