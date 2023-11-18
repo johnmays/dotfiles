@@ -13,6 +13,13 @@
 		"editor.background": "#03100f",
 		"editor.foreground": "#cefbfe",
 		"sideBar.background": "#03100f",
+		"editorGutter.background": "#032825",
+		"editorOverviewRuler.findMatchForeground": "#ff9d6d7e",
+		"editorGroupHeader.noTabsBackground": "#032825",
+		"tab.activeBackground": "#032825",
+		"tab.activeForeground": "#cefbfe",
+		"tab.inactiveBackground": "#031c1a",
+		"tab.inactiveForeground": "#cefbfe80",
 		// general settings - will apply to all color themes:
 		"actionBar.toggledBackground": "#023737",
 		"activityBarBadge.background": "#02aa9c",
@@ -202,10 +209,9 @@
 		"editorGroup.dropBackground": "#04645880",
 		"editorGroup.dropIntoPromptBackground": "#032825",
 		"editorGroup.dropIntoPromptForeground": "#cefbfe",
-		"editorGroupHeader.noTabsBackground": "#032825",
-		"editorGroupHeader.tabsBackground": "#032825",
+		//"editorGroupHeader.noTabsBackground": "#032825",
+		"editorGroupHeader.tabsBackground": "#03100f",
 		"editorGutter.addedBackground": "#023737",
-		"editorGutter.background": "#032825",
 		"editorGutter.commentGlyphForeground": "#cefbfe",
 		"editorGutter.commentRangeForeground": "#023737",
 		"editorGutter.commentUnresolvedGlyphForeground": "#cefbfe",
@@ -256,7 +262,7 @@
 		"editorOverviewRuler.currentContentForeground": "#02aa9c80",
 		"editorOverviewRuler.deletedForeground": "#03282599",
 		"editorOverviewRuler.errorForeground": "#032825b3",
-		"editorOverviewRuler.findMatchForeground": "#0328257e",
+		//"editorOverviewRuler.findMatchForeground": "#ff9d6d7e",
 		"editorOverviewRuler.incomingContentForeground": "#02aa9c80",
 		"editorOverviewRuler.infoForeground": "#02aa9c",
 		"editorOverviewRuler.modifiedForeground": "#02aa9c99",
@@ -559,12 +565,12 @@
 		"symbolIcon.typeParameterForeground": "#cefbfe",
 		"symbolIcon.unitForeground": "#cefbfe",
 		"symbolIcon.variableForeground": "#99f8f8",
-		"tab.activeBackground": "#032825",
-		"tab.activeForeground": "#cefbfe",
+		//"tab.activeBackground": "#032825",
+		//"tab.activeForeground": "#cefbfe",
 		"tab.activeModifiedBorder": "#02aa9c",
 		"tab.border": "#032825",
-		"tab.inactiveBackground": "#032825",
-		"tab.inactiveForeground": "#cefbfe80",
+		//"tab.inactiveBackground": "#031c1a",
+		//"tab.inactiveForeground": "#cefbfe80",
 		"tab.inactiveModifiedBorder": "#02aa9c80",
 		"tab.unfocusedActiveBackground": "#032825",
 		"tab.unfocusedActiveForeground": "#cefbfe80",
@@ -1143,7 +1149,7 @@
 			{
 				"scope": "support.type.python",
 				"settings": {
-					"foreground": "#023737"
+					"foreground": "#027873"
 				}
 			}
 		]

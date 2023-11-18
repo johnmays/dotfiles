@@ -11,7 +11,7 @@ pad_length = 6
 
 screens = [
     Screen(
-        wallpaper="~/assets/backgrounds/background_02_colors.png",
+        wallpaper="~/assets/backgrounds/background_02_colors_contours.png",
         top=bar.Bar(
             [
                 custom_groupbox.GroupBox(
