@@ -36,6 +36,12 @@ font:
     family: Input Mono
     style: Bold Italic
 
+window:
+  opacity: 0.95
+  padding:
+    x: 4
+    y: 4
+
 schemes:
 
   custom: &custom
@@ -46,10 +52,10 @@ schemes:
       black:   '0x020303'
       red:     '0xbd293c'
       green:   '0x046458'
-      yellow:  '0xfffe8c'
+      yellow:  '0xff9d6d'
       blue:    '0x027873'
-      magenta: '0xbd293c'
-      cyan:    '0x1ad6d6'
+      magenta: '0x02aa9c'
+      cyan:    '0x01cfc0'
       white:   '0xcefbfe'
       
 colors: *custom
