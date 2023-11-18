@@ -32,38 +32,36 @@ class ColorReplacer():
         if protocol == "syntax":
             # a color list for syntax highlighting (no dark greys)
             self.master_colors = [
-                "#fffe8c",
-                "#034041",
+                # "#020303",
+                # "#03100f",
+                "#032825",
+                # "#031c1a",
                 "#023737",
                 "#027873",
                 "#046458",
-                "#009f95",
                 "#02aa9c",
                 "#01cfc0",
-                "#1ad6d6",
                 "#cefbfe",
                 "#99f8f8",
-                "#ff6e53",
-                "#ff9d6d",
+                #
                 "#ab87c3",
+                "#bd293c",
                 "#ff8753",
-                "#bd293c"
+                "#ff9d6d",
+                "#ffe68e"
             ]
         else: # (if protocol == "program")
             # a color list for programs in general (grays, but no greens)
             self.master_colors = [
                 "#020303",
                 "#03100f",
-                "#fffe8c",
                 "#032825",
-                "#034041",
+                "#031c1a",
                 "#023737",
                 "#027873",
                 "#046458",
-                "#009f95",
                 "#02aa9c",
                 "#01cfc0",
-                "#1ad6d6",
                 "#cefbfe",
                 "#99f8f8"
             ]
@@ -222,6 +220,6 @@ if __name__ == '__main__':
     else:
         raise(ValueError("Invalid Argument: please set format to either \"hex\" or \"rofi\". "))
 
-    print("Running replacer of type: {p}\n and color format: {c}".format(p=protocol, c = color_mode))
+    print("Running replacer of type: {p}\nand color format: {c}".format(p=protocol, c = color_mode))
     replacer = ColorReplacer(data_path, protocol, color_mode)
     replacer.replace()
