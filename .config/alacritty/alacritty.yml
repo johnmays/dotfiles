@@ -40,16 +40,16 @@ schemes:
 
   custom: &custom
     primary:
-      background: '0x24282a'
-      foreground: '0xc6c7c8'
+      background: '0x03100f'
+      foreground: '0x99f8f8'
     normal:
-      black:   '0x171b1c'
-      red:     '0xbb4542'
-      green:   '0x017dbb'
-      yellow:  '0xbc955c'
-      blue:    '0x07628f'
-      magenta: '0xbb4542'
-      cyan:    '0x017dbb'
-      white:   '0xc6c7c8'
+      black:   '0x020303'
+      red:     '0xbd293c'
+      green:   '0x046458'
+      yellow:  '0xfffe8c'
+      blue:    '0x027873'
+      magenta: '0xbd293c'
+      cyan:    '0x1ad6d6'
+      white:   '0xcefbfe'
       
 colors: *custom

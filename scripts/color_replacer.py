@@ -7,7 +7,7 @@ Description:
     palette.
 
 Functionality:
-    Pass a filepath to this script, then it will look through the file for colors
+    Pass a text file to this script, then it will look through the file for colors
     of a specified format (e.g. hex (default)) and replace them with a color from
     the palette that is the least distance away.  Once it is finished, it will
     save the file.
