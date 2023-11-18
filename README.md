@@ -1,7 +1,8 @@
 # @johnmays dotfiles
 My Linux build's configuration files.  
 
-<img src="./assets/screen_cap_02.png" width="1000" />
+<img src="./assets/screen_cap_colors_02_01.png" width="1000" />
+<img src="./assets/screen_cap_colors_02_wallpaper.png" width="1000" />
 
 ## Quick Note:
 This is still a work in progress.  Many programs and GUIs are unfinished.
@@ -22,7 +23,7 @@ My goals for this system are to modify it so that it:
   - Kernel: Linux 6.5.9-arch2-1
 - Init system: [systemd](https://systemd.io/)
 - Window System: [X11](https://www.x.org/wiki/)
-- Window Manager: [Qtile](https://qtile.org/) This takes care of my bar as well, so it is my entire desktop environment.
+- Window Manager: [Qtile](https://qtile.org/) (MonadTall) This takes care of my bar as well, so it is my entire desktop environment.
 - Package Managers (2):
   - [pacman](https://archlinux.org/pacman/)
   - [yay](https://github.com/Jguer/yay) for interfacing with [AUR](https://aur.archlinux.org/).
@@ -65,12 +66,12 @@ I've tried to transform at least the colors and font of every program I could
 ### Colors:
 These are completely custom
 #### Core palette:
-<img src="./assets/colors/colors_01.png" width="600" />
+<img src="./assets/colors/colors_02.png" width="700" />
 
 #### Extra colors for editor:
-<img src="./assets/colors/colors_01_extra.png" width="600" />
+<img src="./assets/colors/colors_02_extra.png" width="700" />
 
 ### Font:
 [Input Mono](https://input.djr.com/license/) by David Jonathan Ross
 
-<img src="./assets/input_example.png" width="344" />
+<img src="./assets/input_example.png" width="400" />
