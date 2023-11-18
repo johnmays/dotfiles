@@ -7,7 +7,7 @@ Description:
     palette.
 
 Functionality:
-    Pass a filepath to this script, then it will look through the file for colors
+    Pass a text file to this script, then it will look through the file for colors
     of a specified format (e.g. hex (default)) and replace them with a color from
     the palette that is the least distance away.  Once it is finished, it will
     save the file.
@@ -32,34 +32,38 @@ class ColorReplacer():
         if protocol == "syntax":
             # a color list for syntax highlighting (no dark greys)
             self.master_colors = [
-                "#555c61",
-                "#adafb1",
-                "#c6c7c8",
-                "#0d4662",
-                "#07628f",
-                "#017dbb",
-                "#bb4542",
-                "#bb6742",
-                "#bc955c",
-                "#3d683b",
-                "#647c50",
-                "#4a3957"
+                # "#020303",
+                # "#03100f",
+                "#032825",
+                # "#031c1a",
+                "#023737",
+                "#027873",
+                "#046458",
+                "#02aa9c",
+                "#01cfc0",
+                "#cefbfe",
+                "#99f8f8",
+                #
+                "#ab87c3",
+                "#bd293c",
+                "#ff8753",
+                "#ff9d6d",
+                "#ffe68e"
             ]
         else: # (if protocol == "program")
             # a color list for programs in general (grays, but no greens)
             self.master_colors = [
-                "#171b1c",
-                "#24282a",
-                "#3c4549",
-                "#555c61",
-                "#adafb1",
-                "#c6c7c8",
-                "#0d4662",
-                "#07628f",
-                "#017dbb",
-                "#bb4542",
-                "#bb6742",
-                "#bc955c"
+                "#020303",
+                "#03100f",
+                "#032825",
+                "#031c1a",
+                "#023737",
+                "#027873",
+                "#046458",
+                "#02aa9c",
+                "#01cfc0",
+                "#cefbfe",
+                "#99f8f8"
             ]
      
     def __hex2rgb(self, color: str) -> tuple:
@@ -216,6 +220,6 @@ if __name__ == '__main__':
     else:
         raise(ValueError("Invalid Argument: please set format to either \"hex\" or \"rofi\". "))
 
-    print("Running replacer of type: {p}\n and color format: {c}".format(p=protocol, c = color_mode))
+    print("Running replacer of type: {p}\nand color format: {c}".format(p=protocol, c = color_mode))
     replacer = ColorReplacer(data_path, protocol, color_mode)
     replacer.replace()

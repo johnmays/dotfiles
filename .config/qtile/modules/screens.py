@@ -11,7 +11,7 @@ pad_length = 6
 
 screens = [
     Screen(
-        wallpaper="~/.config/qtile/background.png",
+        wallpaper="~/assets/backgrounds/background_02_colors.png",
         top=bar.Bar(
             [
                 custom_groupbox.GroupBox(
@@ -104,7 +104,7 @@ screens = [
                         'Button1':
                         lambda: qtile.cmd_spawn(os.path.expanduser('~/.config/rofi/powermenu.sh'))
                     },
-                    foreground=red,
+                    foreground=offwhite,
                     background=darkergray
                 ),
                 widget.Sep(padding=pad_length, linewidth=0, background=darkergray)
