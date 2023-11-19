@@ -49,7 +49,7 @@ screens = [
                 #         lambda: lazy.widget["mpris2"].previous()
                 #     },
                 #     foreground=offwhite,
-                #     background=darkgray
+                #     background=darkgray023737
                 # ),
                 # widget.TextBox( # Pause buttons
                 #     text='⏸',

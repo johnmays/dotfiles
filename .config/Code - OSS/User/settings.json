@@ -1,15 +1,18 @@
 {
+	// common/difficult to find general settings:
 	"workbench.startupEditor": "none",
-    "explorer.confirmDragAndDrop": false,
-    "git.openRepositoryInParentFolders": "always",
-    "explorer.confirmDelete": false,
-    "editor.fontFamily": "'Input Mono', Input Mono",
-    "editor.minimap.enabled": false,
-    "editor.fontSize": 16,
-    "workbench.colorTheme": "Visual Studio Dark", // VSCode will wig out if you put "custom" here so I left it
+	"explorer.confirmDragAndDrop": false,
+	"git.openRepositoryInParentFolders": "always",
+	"explorer.confirmDelete": false,
+	"editor.fontFamily": "'Input Mono', Input Mono",
+	"editor.minimap.enabled": false,
+	"editor.fontSize": 16,
+	"window.titleBarStyle": "custom",
+	//"workbench.colorTheme": "Visual Studio Dark", // VSCode will wig out if you put "custom" here so I left it
 	"workbench.colorCustomizations": {
-		// common/difficult to find settings:
-		"list.warningForeground": "#01cfc0",
+		// common/difficult to find color settings:
+		"list.warningForeground": "#ff9d6d",
+		"list.errorForeground": "#bd293c",
 		"editor.background": "#03100f",
 		"editor.foreground": "#cefbfe",
 		"sideBar.background": "#03100f",
@@ -47,8 +50,8 @@
 		"widget.border": "#032825",
 		// Bracket Highlighting:
 		"editorBracketHighlight.foreground1": "#01cfc0",
-		"editorBracketHighlight.foreground2": "#027873",
-		"editorBracketHighlight.foreground3": "#023737", 
+		"editorBracketHighlight.foreground2": "#ff9d6d",
+		"editorBracketHighlight.foreground3": "#cefbfe", 
 		// Activity Bar:
 		"activityBar.activeBorder": "#cefbfe",
 		"activityBar.background": "#03100f",
@@ -353,7 +356,6 @@
 		"list.activeSelectionBackground": "#046458",
 		"list.activeSelectionForeground": "#cefbfe",
 		"list.deemphasizedForeground": "#99f8f8",
-		"list.errorForeground": "#032825",
 		"list.filterMatchBackground": "#03282555",
 		"list.focusHighlightForeground": "#02aa9c",
 		"list.focusOutline": "#02aa9c",
@@ -1154,12 +1156,8 @@
 			}
 		]
 	},
-	"window.titleBarStyle": "custom",
 	"workbench.statusBar.visible": false,
 	"workbench.layoutControl.type": "menu",
-	"window.menuBarVisibility": "compact",
-	"workbench.layoutControl.enabled": false,
-	"window.commandCenter": false,
 	"editor.bracketPairColorization.enabled": true,
 	"todo.colors.cancelled": "#bd293c",
 	"todo.colors.comment": "#bd293c",
@@ -1167,5 +1165,8 @@
 	"todo.colors.project": "#02aa9c",
 	"todo.colors.projectStatistics": "#027873",
 	"todo.colors.tag": "#ff8753",
-	"window.zoomLevel": 1
+	"window.zoomLevel": 1,
+	"workbench.layoutControl.enabled": false,
+	"window.commandCenter": false,
+	"window.menuBarVisibility": "compact"
 }
